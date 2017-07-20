@@ -8,7 +8,7 @@ for (let i = 0; i < codeArea.length; i++) {
   copyButton.appendChild(buttonText);
   //change color of code text on button click
   copyButton.addEventListener('click', copyText);
-  document.body.appendChild(copyButton);
+  codeArea[i].appendChild(copyButton);
 
   }
 
