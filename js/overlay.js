@@ -1,5 +1,6 @@
 // create copy button
-let codeArea = document.querySelectorAll('pre > code'); //.lang-py.prettyprint.prettyprinted
+let pre = document.querySelectorAll('pre');
+let codeArea = document.querySelectorAll('pre'); //.lang-py.prettyprint.prettyprinted
 
 for (let i = 0; i < codeArea.length; i++) {
   let copyButton = document.createElement('button');
@@ -16,7 +17,7 @@ for (let i = 0; i < codeArea.length; i++) {
 function copyText(){
   let code = document.querySelectorAll('pre > code');
   for (let i = 0; i < code.length; i++) {
-    code[i].style.backgroundColor = 'red';
+    code[i].style.backgroundColor = 'pink';
   }
 }
 
