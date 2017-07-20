@@ -1,5 +1,5 @@
 # Code Snip
-Chrome extensions are a way of enhancing a user's behavior to automate their everyday behavior within the Google Chrome browser. Contemplating about the endless possibilities, my mind always finds itself wanting to automate my routine tasks. Everyday I find myself scouring the web for help with my debugging issues and that was how Code Snip was born.
+Chrome extensions are a way of enhancing a user's behavior to automate their everyday behavior within the Google Chrome browser. Contemplating about the endless possibilities, I thought about how many times I scour the web for help with technical bugs. It would be amazing if helpful code online could be copied with the just the click of a button instead of extra keyboard strokes or right mouse clicks. That was how Code Snip was born.
 
 # What is Code Snip?
 
