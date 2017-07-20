@@ -10,3 +10,43 @@ body {
   min-height: 150px;
   max-height: 300px;
 }
+
+body {
+   background: url('https://image.flaticon.com/icons/png/512/184/184676.png') !important;
+}
+
+#masthead,
+#primary {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  background-color: #fff;
+  padding: 20px !important;
+}
+#masthead {
+  background: none;
+}
+#masthead img, #primary img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.overlayContainer {
+  padding: 10px 20px;
+}
+
+.copyButton {
+  width: 300px;
+  height: 20px;
+   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1051;
+  float: right;
+  opacity: .5;
+  background-color: #a3e243;
+}
+
+.copyButton:hover {
+  opacity: 1;
+  background-color: #a3e243;
+}
