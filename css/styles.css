@@ -12,7 +12,9 @@ body {
 }
 
 body {
-   background: url('https://image.flaticon.com/icons/png/512/184/184676.png') !important;
+  background: url(https://image.flaticon.com/icons/png/512/184/184676.png) !important;
+  background-size: 8px 6px;
+  background-repeat: repeat;
 }
 
 #masthead,
@@ -35,16 +37,54 @@ body {
 }
 
 .copyButton,.copyButton:visited, .copyButton:focus {
-  width: 100px;
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  text-decoration: none;
+  /* width: 100px; */
+  display: inline-block;
+  float: right;
   height: 20px;
   z-index: 1051;
-  display: inline-block;
-   float: right;
   opacity: .6;
-  background-color: #a3e243;
+  text-align: center;
+  color: #39739d;
+  background-color: #e1ecf4;
+  border: 1px solid rgb(193, 221, 241);
+  box-shadow: none;
+  padding: .25em .5em;
+  margin: 0 2px 2px 0;
+  white-space: nowrap;
+  border-radius: 2px;
+  /* float: none; */
 }
 
 .copyButton:hover {
   opacity: 1;
-  background-color: #a3e243;
+  color: #39739d;
+  background-color: #e1ecf4;
+  border: 1px solid rgb(193, 221, 241);
+  box-shadow: none;
+}
+
+.areaToHighlight {
+  background-color: pink;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.areaToUnHighlight {
+  background-color: #eff0f1 !important;
+  /* -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out; */
+}
+
+code {
+  background-color: transparent;
 }
