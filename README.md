@@ -8,5 +8,11 @@ Code Snip is a productivity tool for developers. When developers have errors, th
 # How was this built?
 Using merely HTML, CSS, JS, and jQuery, I've enhanced the way developers interact with Stack Overflow by adding a 'copy' button to copy user's code from a search results page.
 
+# Where can I use it?
+You can use this on the following websites:
+* stackoverflow.com
+* github.com
+* ubuntu.com
+
 # Where can I get this?!
 Try it out now by downloading it at the Chrome store!
