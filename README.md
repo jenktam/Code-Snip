@@ -15,4 +15,4 @@ You can use Code Snip on the following websites:
 * [askubuntu.com](https://www.askubuntu.com)
 
 # Where can I get this?!
-Try it out now by downloading it at the Chrome store!
+You can get this extension for free at the Google Chrome Store. Download [Code Snip](https://chrome.google.com/webstore/detail/loeopfggphfjeegjidkjbogidpbapold/)today!
