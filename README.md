@@ -10,9 +10,9 @@ Using merely HTML, CSS, JS, and jQuery, I've enhanced the way developers interac
 
 # Where can I use it?
 You can use this on the following websites:
-* stackoverflow.com
-* github.com
-* ubuntu.com
+* [stackoverflow.com](https://www.stackoverflow.com)
+* [github.com](https://www.github.com)
+* [askubuntu.com](https://www.askubuntu.com)
 
 # Where can I get this?!
 Try it out now by downloading it at the Chrome store!
