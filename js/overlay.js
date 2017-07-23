@@ -1,5 +1,5 @@
 // create copy button
-let pre = document.querySelectorAll('pre');
+// import copy from 'copy-to-clipboard';
 let codeArea = document.querySelectorAll('pre'); //.lang-py.prettyprint.prettyprinted
 
 for (let i = 0; i < codeArea.length; i++) {
@@ -8,16 +8,21 @@ for (let i = 0; i < codeArea.length; i++) {
   copyButton.className = 'copyButton';
   copyButton.appendChild(buttonText);
   //change color of code text on button click
-  copyButton.addEventListener('click', copyText);
   codeArea[i].appendChild(copyButton);
+  let codeBlock = codeArea[i].children[0]
+  copyButton.addEventListener('click', copyTextFunc(codeBlock));
 
-  }
+}
 
 //functions
-function copyText(){
-  let code = document.querySelectorAll('pre > code');
-  for (let i = 0; i < code.length; i++) {
-    code[i].style.backgroundColor = 'pink';
+function copyTextFunc(elementToCopy){
+  //currently copying all text but we want this to only copy a specific section
+  // let code = document.querySelectorAll('pre > code');
+
+  return function copyText() {
+    elementToCopy.style.backgroundColor = 'pink';
+    console.log("elementToCopy.innerText:", elementToCopy.innerText);
+    window.copyToClipboard(elementToCopy.innerText);
   }
 }
 
