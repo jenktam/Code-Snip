@@ -2,7 +2,7 @@
   "name": "Code Snip",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "Code Snip allows you to copy code from Stack Overflow, Github, and AskUbuntu's websites with just click of a button, effectively expediting the time it takes you to copy and test code.",
+  "description": "Copy code from Stack Overflow, Github, and AskUbuntu's websites expediting the time it takes you to copy and test code.",
   //background runs behind the scenes all the time
   "background": {
     "scripts": ["js/background.js"],
