@@ -2,8 +2,7 @@
   "name": "Code Snip",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "Copy code from Stack Overflow, Github, and AskUbuntu's websites expediting the time it takes you to copy and test code.",
-  //background runs behind the scenes all the time
+  "description": "Copy code from Stack Overflow, Github, and AskUbuntu's websites expediting the time it takes you to debug issues.",
   "background": {
     "scripts": ["js/background.js"],
     "persistent": false
@@ -16,12 +15,11 @@
   "browser_action": {
     "default_icon": "icon.png",
     "default_title": "Code Snip",
-    "default_popup": "overlay.html" //shows when user mouses over icon
+    "default_popup": "overlay.html"
   },
   "permissions": [
     "activeTab"
   ],
-  //content scripts are loaded into matched web pages
   "content_scripts": [
     {
     "css": ["css/stackOverflow.css"],
