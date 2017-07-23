@@ -3,7 +3,7 @@ Chrome extensions are a way of enhancing a user's behavior to automate their eve
 
 # What is Code Snip?
 
-Code Snip is a productivity tool for developers. When developers have errors, they can download this extension, which shows a "Copy" button overlay on code snippets within the Stack Overflow, Github, and AskUbuntu web page. This button will copy all of the desired text, creating a more seamless experience from web to terminal or text editor.
+Code Snip is a productivity tool for developers. When developers have errors, they can download this extension, which shows a "Copy" button overlay on code snippets within the Stack Overflow, Github, and AskUbuntu web pages. This button will copy all of the desired text, creating a more seamless experience from web to terminal or text editor.
 
 # How was this built?
 Using merely HTML, CSS, JS, I've enhanced the way developers interact with Stack Overflow by adding a 'copy' button to copy user's code from a search results page.
