@@ -23,10 +23,17 @@
     "activeTab"
   ],
   //content scripts are loaded into your matched web pages
-  "content_scripts": [{
+  "content_scripts": [
+    {
     "css": ["css/overlay.css"],
     "js": ["js/overlay.js", "js/contentscript.js", "js/copy-to-clipboard.js"],
     "matches": ["https://stackoverflow.com/*"]
-  }],
+    },
+    {
+    "css": ["css/github.css"],
+    "js": ["js/github.js", "js/contentscript.js", "js/copy-to-clipboard.js"],
+    "matches": ["https://github.com/*"]
+    }
+],
   "content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'"
 }

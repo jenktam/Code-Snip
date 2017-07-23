@@ -1,0 +1,10 @@
+.pre {
+  display: inline-block !important;
+}
+
+button.copyButton {
+    float: right;
+    display: inline-block;
+    margin: 10px;
+}
+
