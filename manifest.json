@@ -24,7 +24,7 @@
   ],
   //content scripts are loaded into your matched web pages
   "content_scripts": [{
-    "css": ["css/styles.css"],
+    "css": ["css/overlay.css"],
     "js": ["js/overlay.js", "js/contentscript.js", "js/copy-to-clipboard.js"],
     "matches": ["https://stackoverflow.com/*"]
   }],
