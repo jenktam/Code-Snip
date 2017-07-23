@@ -2,7 +2,7 @@
   "name": "Code Snip",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "This chrome extension allows you to copy code within your Stack Overflow searches with the click of a button. This expedites the amount of time it takes developers to copy and test code.",
+  "description": "This chrome extension allows you to copy code from stackoverflow.com, github.com, and askubuntu.com with just click of a button. This expedites the amount of time it takes developers to copy and test code.",
   //background runs behind the scenes all the time
   "background": {
     "scripts": ["js/background.js"],
@@ -18,15 +18,14 @@
     "default_title": "Code Snip",
     "default_popup": "overlay.html" //shows when user mouses over icon
   },
-  //when making a rest API call, need ref for where making API call to
   "permissions": [
     "activeTab"
   ],
-  //content scripts are loaded into your matched web pages
+  //content scripts are loaded into matched web pages
   "content_scripts": [
     {
-    "css": ["css/overlay.css"],
-    "js": ["js/overlay.js", "js/contentscript.js", "js/copy-to-clipboard.js"],
+    "css": ["css/stackOverflow.css"],
+    "js": ["js/stackOverflow.js", "js/contentscript.js", "js/copy-to-clipboard.js"],
     "matches": ["https://stackoverflow.com/*"]
     },
     {
