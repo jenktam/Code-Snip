@@ -1,6 +1,4 @@
-let codeArea = document.querySelectorAll(".highlight-source-js");
-let pre = document.getElementsByTagName("pre");
-// pre.className = "pre";
+let codeArea = document.querySelectorAll("pre");
 console.log("codeArea", codeArea);
 
 for (let i = 0; i < codeArea.length; i++) {
@@ -9,13 +7,13 @@ for (let i = 0; i < codeArea.length; i++) {
   copyButton.className = "copyButton";
   copyButton.appendChild(buttonText);
   codeArea[i].appendChild(copyButton);
-  codeArea[i].children[0].className = 'pre';
   console.log("codeArea[i].children[0]", codeArea[i].children[0])
+
 
   let codeBlock = codeArea[i].children[0];
   copyButton.addEventListener(
     "click",
-    copyTextFunc(codeBlock, copyButton, codeArea[i])
+    copyTextFunc(codeArea[i], copyButton, codeArea[i])
   );
 }
 
@@ -25,13 +23,14 @@ function copyTextFunc(elementToCopy, buttonToUpdate, areaToHighlight) {
     //temporarily highlight copied text for user clarity
     areaToHighlight.className = "areaToHighlight";
     areaToHighlight.style.backgroundColor = "pink";
-    elementToCopy.style.backgroundColor = "transparent";
+    // elementToCopy.style.backgroundColor = "transparent";
 
     setTimeout(() => {
       areaToHighlight.className = "areaToUnHighlight";
     }, 400);
 
-    window.copyToClipboard(elementToCopy.innerText);
+    //copy code text
+    window.copyToClipboard(elementToCopy.innerText.slice(0,-4));
     buttonToUpdate.innerText = "Copied";
   };
 }
